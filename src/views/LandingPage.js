@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import NavBar from '../components/NavBar';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class LandingPage extends Component {
   render() {
-    return <h1>Welcome to artX</h1>;
+    return (
+      <>
+        <NavBar />
+      </>
+    );
   }
 }
 
