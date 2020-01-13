@@ -1,76 +1,154 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a h1 welcome message 1`] = `
+exports[`Landing page components art box component with images 1`] = `
+Array [
+  <div>
+    <img
+      alt=""
+      src={1}
+    />
+    <p>
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+    </p>
+  </div>,
+  <div>
+    <img
+      alt=""
+      src={2}
+    />
+    <p>
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+    </p>
+  </div>,
+]
+`;
+
+exports[`Landing page components art box component without images 1`] = `
+<h3
+  className="not-found"
+>
+  Not found
+</h3>
+`;
+
+exports[`Landing page components footer component 1`] = `
 <div
-  className="container"
+  className="last"
 >
   <div
-    className="menu"
+    className="contact"
   >
-    <div
-      className="navbar"
-    >
-      <div
-        className="logo"
-      >
-        <img
-          alt=""
-          src="test-file-stub"
-        />
-      </div>
-      <div
-        className="left-menu"
-      >
-        <a
-          href="/"
-          onClick={[Function]}
-        >
-          HOME
-        </a>
-        <a
-          href="/gallery"
-          onClick={[Function]}
-        >
-          GALLERY
-        </a>
-        <a
-          href="/about"
-          onClick={[Function]}
-        >
-          ABOUT US
-        </a>
-      </div>
-      <div
-        className="right-menu"
-      >
-        <button
-          type="button"
-        >
-          Login
-        </button>
-        <button
-          className="btn-round"
-          type="button"
-        >
-          Get Started
-        </button>
-      </div>
-    </div>
+    <h2>
+      Contacts
+    </h2>
+    <ul>
+      <li>
+        <span>
+          Email: 
+        </span>
+        ubugeni@artx.io
+      </li>
+      <li>
+        <span>
+          Phone: 
+        </span>
+        +250 07 820 577 91
+      </li>
+      <li>
+        <span>
+          Facebook: 
+        </span>
+        artx-ubugeni
+      </li>
+    </ul>
   </div>
   <div
-    className="display"
+    className="social"
   >
     <img
       alt=""
-      className="slide"
+      src="test-file-stub"
+    />
+    <img
+      alt=""
+      src="test-file-stub"
+    />
+    <img
+      alt=""
+      src="test-file-stub"
+    />
+  </div>
+</div>
+`;
+
+exports[`Landing page components navbar component 1`] = `
+<div
+  className="navbar"
+>
+  <div
+    className="logo"
+  >
+    <img
+      alt=""
       src="test-file-stub"
     />
   </div>
   <div
-    className="content"
-  />
+    className="left-menu"
+  >
+    <a
+      href="/"
+    >
+      HOME
+    </a>
+    <a
+      href="/gallery"
+    >
+      GALLERY
+    </a>
+    <a
+      href="/about"
+    >
+      ABOUT US
+    </a>
+  </div>
   <div
-    className="footer"
-  />
+    className="right-menu"
+  >
+    <button
+      type="button"
+    >
+      Login
+    </button>
+    <button
+      className="btn-round"
+      type="button"
+    >
+      Get Started
+    </button>
+  </div>
 </div>
+`;
+
+exports[`Landing page components welcome message component 1`] = `
+Array [
+  <img
+    alt=""
+    className="welcome-img"
+    src="test-file-stub"
+  />,
+  <p
+    className="welcome-msg"
+  >
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+  </p>,
+  <div
+    className="down-dv"
+  >
+    <img
+      alt=""
+      src="test-file-stub"
+    />
+  </div>,
+]
 `;

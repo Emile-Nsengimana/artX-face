@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../img/logo.svg';
+import Logo from '../img/svg/logo.svg';
 
 const NavBar = () => (
   <div className="navbar">
@@ -8,9 +8,9 @@ const NavBar = () => (
       <img src={Logo} alt="" />
     </div>
     <div className="left-menu">
-      <Link to="/">HOME</Link>
-      <Link to="/gallery">GALLERY</Link>
-      <Link to="/about">ABOUT US</Link>
+      <a href="/">HOME</a>
+      <a href="/gallery">GALLERY</a>
+      <a href="/about">ABOUT US</a>
     </div>
     <div className="right-menu">
       <button type="button">Login</button>
