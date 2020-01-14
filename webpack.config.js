@@ -39,6 +39,17 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /.(jpg|jpeg|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name]-[hash:8].[ext]',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
