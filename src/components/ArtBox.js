@@ -4,7 +4,7 @@ import React from 'react';
 class ArtBox extends React.Component {
   render() {
     return (
-      <>
+      <div className="art-box">
         {this.props.images.length !== 0
           ? this.props.images.map((img) => (
             <div key={img}>
@@ -14,7 +14,7 @@ class ArtBox extends React.Component {
 
           ))
           : <h3 className="not-found">Not found</h3>}
-      </>
+      </div>
     );
   }
 }

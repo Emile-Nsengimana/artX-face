@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Landing page components art box component with images 1`] = `
-Array [
+<div
+  className="art-box"
+>
   <div>
     <img
       alt=""
@@ -10,7 +12,7 @@ Array [
     <p>
       It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
     </p>
-  </div>,
+  </div>
   <div>
     <img
       alt=""
@@ -19,16 +21,20 @@ Array [
     <p>
       It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
     </p>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Landing page components art box component without images 1`] = `
-<h3
-  className="not-found"
+<div
+  className="art-box"
 >
-  Not found
-</h3>
+  <h3
+    className="not-found"
+  >
+    Not found
+  </h3>
+</div>
 `;
 
 exports[`Landing page components footer component 1`] = `
@@ -83,65 +89,71 @@ exports[`Landing page components footer component 1`] = `
 
 exports[`Landing page components navbar component 1`] = `
 <div
-  className="navbar"
+  className="menu"
 >
   <div
-    className="logo"
+    className="navbar"
   >
-    <img
-      alt=""
-      src="test-file-stub"
-    />
-  </div>
-  <div
-    className="left-menu"
-  >
-    <a
-      href="/"
+    <div
+      className="logo"
     >
-      HOME
-    </a>
-    <a
-      href="/gallery"
+      <img
+        alt=""
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      className="left-menu"
     >
-      GALLERY
-    </a>
-    <a
-      href="/about"
+      <a
+        href="/"
+      >
+        HOME
+      </a>
+      <a
+        href="/gallery"
+      >
+        GALLERY
+      </a>
+      <a
+        href="/about"
+      >
+        ABOUT US
+      </a>
+    </div>
+    <div
+      className="right-menu"
     >
-      ABOUT US
-    </a>
-  </div>
-  <div
-    className="right-menu"
-  >
-    <button
-      type="button"
-    >
-      Login
-    </button>
-    <button
-      className="btn-round"
-      type="button"
-    >
-      Get Started
-    </button>
+      <button
+        type="button"
+      >
+        Login
+      </button>
+      <button
+        className="btn-round"
+        type="button"
+      >
+        Get Started
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Landing page components welcome message component 1`] = `
-Array [
+<div
+  className="display"
+>
   <img
     alt=""
     className="welcome-img"
     src="test-file-stub"
-  />,
+  />
   <p
     className="welcome-msg"
   >
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-  </p>,
+  </p>
   <div
     className="down-dv"
   >
@@ -149,6 +161,6 @@ Array [
       alt=""
       src="test-file-stub"
     />
-  </div>,
-]
+  </div>
+</div>
 `;

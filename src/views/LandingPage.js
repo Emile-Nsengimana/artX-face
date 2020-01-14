@@ -9,7 +9,8 @@ import Img4 from '../img/card_2.jpg';
 import Img5 from '../img/card_5.jpg';
 import Img6 from '../img/card_8.jpg';
 import ImageBox from '../components/ArtBox';
-
+import TopTitle from '../components/TopTitle';
+import About from '../components/About';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class LandingPage extends Component {
@@ -33,35 +34,16 @@ class LandingPage extends Component {
     return (
       <>
         <div className="container">
-          <div className="menu">
-            <NavBar />
-          </div>
-          <div className="display">
-            <Welcome />
-          </div>
+          <NavBar />
+          <Welcome />
           <div className="content">
-            <h2 className="title-first">
-                NEW PRODUCT 
-            </h2>
-            <div className="art-box">
-              <ImageBox images={this.state.images} />
-            </div>
+            <TopTitle title="NEW PRODUCT" />
+            <ImageBox images={this.state.images} />
           </div>
-          <div className="about">
-            <h2 className="title-first">
-                SPECIAL OFFERS 
-            </h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
-            </p>
-          </div>
+          <About />
           <div className="special-offer">
-            <h2 className="title-first">
-                SPECIAL OFFERS 
-            </h2>
-            <div className="art-box">
-              <ImageBox images={this.state.images_2} />
-            </div>
+            <TopTitle title="SPECIAL OFFERS" />
+            <ImageBox images={this.state.images_2} />
           </div>
           <div className="footer">
             <Footer />
