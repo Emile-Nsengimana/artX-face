@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Input = (type, value) => (
+const Input = ({ type, value, placeholder }) => (
   <input
-    type={type}
+    type={type || 'button'}
     className="default-input"
-    value={value}
+    placeholder={placeholder || ''}
+    onChange={() => console.log('hello')}
   />
 );
 

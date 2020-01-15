@@ -9,6 +9,10 @@ p{
   font-size: 14pt;
 }
 
+a{
+  text-decoration: none;
+}
+
 .container{
     display: grid;
     grid-gap: 5px;
@@ -27,14 +31,10 @@ p{
   display: grid;
   grid-template-columns: repeat(12, 1fr) ;
   grid-template-rows: 70px;
-  grid-gap: 20px;
   grid-template-areas:
     ". b l l l l l l l  r r .";
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px;
-    background-color: #000000;
-    box-shadow: 0 5px 10px -10px;
+  background-color: #000000;
+  box-shadow: 0 5px 10px -10px;
 }
 
 .navbar a, .navbar button{
@@ -58,28 +58,37 @@ p{
 .navbar .btn-round{
   border-radius: 20px;
   color: rgb(228, 243, 243);
-  border: 1px solid rgb(228, 243, 243);
+  /* border: 1px solid rgb(228, 243, 243); */
+  border: 1px solid #5A698D;
   padding: 7px;
 }
 
 .navbar a{
   margin-right: 30px;
-
   border: none;
 }
 
-.navbar a:hover{
-  color: darkolivegreen;
+.navbar button:hover{
+  color: #5A698D;
   font-weight: bolder;
   cursor: pointer;
+  padding: 5px;
 }
 
-.navbar button:hover{
-  color: rgb(0, 0, 0);
-  background: darkolivegreen;
+.navbar .btn-round:hover{
+  /* padding: 6px; */
+  /* font-weight: 600; */
+  border: 1px solid #5A698D;
+}
+
+.navbar a:hover{
+  color: #5A698D;
+  background: black;
+  font-weight: 700;
   cursor: pointer;
   border-radius: 20px;
-  border: 1px solid darkolivegreen;
+  border: none;
+  /* border: 1px solid #5A698D; */
 }
 
 .description{
@@ -125,7 +134,7 @@ p{
   width: fit-content;
 }
 
-.right-menu button{
+.right-menu a{
   margin-left: 30px;
 }
 
@@ -152,7 +161,7 @@ p{
   grid-area: c;
 }
 
-.about{
+#about{
     background: rgb(0, 0, 0);
     grid-area: a;
     color: white;
@@ -191,7 +200,7 @@ p{
 
 .contact h2{
   color: darkolivegreen;
-} 
+}
 
 .contact li{
   text-decoration: none;
@@ -248,11 +257,84 @@ p{
   text-align: justify;
 }
 
-.about > p{
+#about > p{
   width: 80%;
   display: flex;
   margin: auto;
   align-content: center;
   margin-top: 40px;
   text-align: center;
+}
+
+.signup{
+  display: flex;
+  margin: auto;
+  height: fit-content;
+  margin: auto;
+}
+
+
+.signup .left-side{
+  flex: 1;
+  margin: auto;
+}
+
+.left-side img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.signup h1{
+  text-align: center;
+  color: #3F3D56;
+  background: whitesmoke;
+  cursor: pointer;
+  margin-top: 7%;
+  font-size: 40pt ;
+  font-weight: 200;
+}
+
+.signup h1:hover{
+  color: whitesmoke;
+  background: #3F3D56;
+}
+
+.signup h1{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+.group{
+  flex: 1;
+  text-align: center;
+}
+
+.group h2{
+  text-align: center;
+  margin-top: 5%;
+  color: #5A698D;
+}
+
+.signup button{
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #5A698D;
+  color: white;
+  font-size: 15pt;
+}
+
+.default-input{
+  outline: none;
+  width: 75%;
+  font-size: 14pt;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+  font-weight: 300;
+  color: rgb(0, 0, 0, 0.8);
+  margin: 10px;
 }

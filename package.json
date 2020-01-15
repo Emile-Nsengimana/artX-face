@@ -38,14 +38,17 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "apollo-boost": "^0.4.7",
     "babel-jest": "^24.9.0",
     "css-loader": "^3.2.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "file-loader": "^5.0.2",
+    "graphql": "^14.5.8",
     "jest": "^24.9.0",
-    "muicss": "^0.10.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-multistep": "^3.6.16",
     "react-router-dom": "^5.1.2",
     "react-test-renderer": "^16.12.0",
     "style-loader": "^1.1.2"
@@ -54,8 +57,8 @@
     "automock": false,
     "testRegex": "((\\.|/*.)(test))\\.js?$",
     "setupFilesAfterEnv": [
-        "<rootDir>/jest.setup.js"
-      ],
+      "<rootDir>/jest.setup.js"
+    ],
     "moduleNameMapper": {
       "^.+\\.(css|scss)$": "<rootDir>/tools/styleMock.js",
       "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tools/fileMock.js"
