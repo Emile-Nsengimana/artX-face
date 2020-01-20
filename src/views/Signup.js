@@ -7,7 +7,7 @@ import Logo from '../img/svg/logo.svg';
 const Signup = () => (
   <>
     {/* <NavBar /> */}
-    <div className="signup">
+    <div className="auth-box">
       <div className="left-side">
         <img src={SignupImg} alt="" />
         <a href="/">
@@ -27,7 +27,7 @@ const Signup = () => (
           <Input type="text" placeholder="City" />
           <Input type="text" placeholder="Street No." />
           <Input type="text" placeholder="Post code" />
-          <Input type="text" placeholder="Password" />
+          <Input type="password" placeholder="Password" />
           <button type="button">Signup</button>
         </form>
       </div>

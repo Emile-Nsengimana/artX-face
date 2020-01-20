@@ -14,7 +14,7 @@ const NavBar = () => (
         <a href="#about">ABOUT US</a>
       </div>
       <div className="right-menu">
-        <button type="button">Login</button>
+        <a href="/login">Login</a>
         <a href="/signup" className="btn-round">Get Started</a>
       </div>
     </div>

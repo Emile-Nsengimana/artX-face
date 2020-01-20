@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import Welcome from '../components/Welcome';
-import Footer from '../components/Footer';
 import Img1 from '../img/card_1.jpg';
 import Img2 from '../img/card_4.jpg';
 import Img3 from '../img/card_7.jpg';
@@ -12,7 +11,6 @@ import ImageBox from '../components/ArtBox';
 import TopTitle from '../components/TopTitle';
 import About from '../components/About';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class LandingPage extends Component {
   constructor(props) {
     super(props);
@@ -46,7 +44,6 @@ class LandingPage extends Component {
             <ImageBox images={this.state.images_2} />
           </div>
           <div className="footer">
-            <Footer />
             <h5>&copy;2020 ARTX. ALL RIGHTS RESERVED.</h5>
           </div>
         </div>

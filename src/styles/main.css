@@ -17,7 +17,7 @@ a{
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 8vh 93vh 90vh 45vh 90vh 20vh;
+    grid-template-rows: 8vh 93vh 90vh 45vh 90vh 5vh;
     grid-template-areas:
     "m m m m m m m m m m m m"
     "d d d d d d d d d d d d"
@@ -37,7 +37,7 @@ a{
   box-shadow: 0 5px 10px -10px;
 }
 
-.navbar a, .navbar button{
+.navbar a{
   color: rgb(228, 243, 243);
   font-size: 15px;
   font-weight: 500;
@@ -58,7 +58,6 @@ a{
 .navbar .btn-round{
   border-radius: 20px;
   color: rgb(228, 243, 243);
-  /* border: 1px solid rgb(228, 243, 243); */
   border: 1px solid #5A698D;
   padding: 7px;
 }
@@ -68,16 +67,7 @@ a{
   border: none;
 }
 
-.navbar button:hover{
-  color: #5A698D;
-  font-weight: bolder;
-  cursor: pointer;
-  padding: 5px;
-}
-
 .navbar .btn-round:hover{
-  /* padding: 6px; */
-  /* font-weight: 600; */
   border: 1px solid #5A698D;
 }
 
@@ -88,7 +78,6 @@ a{
   cursor: pointer;
   border-radius: 20px;
   border: none;
-  /* border: 1px solid #5A698D; */
 }
 
 .description{
@@ -134,10 +123,6 @@ a{
   width: fit-content;
 }
 
-.right-menu a{
-  margin-left: 30px;
-}
-
 .left-menu{
   align-self: center;
   grid-area: l;
@@ -174,6 +159,7 @@ a{
 .footer{
   background: rgb(10, 9, 9);
   grid-area: f;
+  padding: 10px;
 }
 
 .last{
@@ -251,6 +237,7 @@ a{
   object-fit: cover;
   height: 60%;
   margin-bottom: 10px;
+  box-shadow: 0 5px 20px 1px;
 }
 
 .art-box > div > p{
@@ -266,17 +253,22 @@ a{
   text-align: center;
 }
 
-.signup{
+.auth-box{
   display: flex;
   margin: auto;
   height: fit-content;
   margin: auto;
 }
 
+.login-img{
+  margin-top: -5%;
+  margin-left: 5%;
+  width: 80% !important;
+}
 
-.signup .left-side{
+.auth-box .left-side{
   flex: 1;
-  margin: auto;
+  margin-top: 10%;
 }
 
 .left-side img{
@@ -284,7 +276,7 @@ a{
   object-fit: cover;
 }
 
-.signup h1{
+.auth-box h1{
   text-align: center;
   color: #3F3D56;
   background: whitesmoke;
@@ -294,12 +286,12 @@ a{
   font-weight: 200;
 }
 
-.signup h1:hover{
+.auth-box h1:hover{
   color: whitesmoke;
   background: #3F3D56;
 }
 
-.signup h1{
+.auth-box h1{
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 
@@ -308,6 +300,7 @@ a{
 .group{
   flex: 1;
   text-align: center;
+  margin: auto;
 }
 
 .group h2{
@@ -316,7 +309,7 @@ a{
   color: #5A698D;
 }
 
-.signup button{
+.auth-box button{
   width: 50%;
   height: 30px;
   outline: none;
