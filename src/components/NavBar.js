@@ -1,24 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Logo from '../img/svg/logo.svg';
 
+
 const NavBar = () => (
-  <div className="menu">
-    <div className="navbar">
-      <div className="logo">
-        <img src={Logo} alt="" />
-      </div>
-      <div className="left-menu">
-        <a href="/">HOME</a>
-        <a href="/gallery">GALLERY</a>
-        <a href="#about">ABOUT US</a>
-      </div>
-      <div className="right-menu">
-        <a href="/login">Login</a>
-        <a href="/signup" className="btn-round">Get Started</a>
-      </div>
+  <nav className="navbar">
+    <img src={Logo} alt="Logo" className="logo" />
+    <div className="menu">
+      <a href="/">HOME</a>
+      <a href="/">GALLERY</a>
+      <a href="#about">ABOUT US</a>
     </div>
-  </div>
+    <div className="navbar-link">
+      <a href="/login" className="btn">Login</a>
+      <a href="/signup" className="btn btn-round">Get started</a>
+    </div>
+  </nav>
 );
 
 export default NavBar;

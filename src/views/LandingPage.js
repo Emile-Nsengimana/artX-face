@@ -7,9 +7,12 @@ import Img3 from '../img/card_7.jpg';
 import Img4 from '../img/card_2.jpg';
 import Img5 from '../img/card_5.jpg';
 import Img6 from '../img/card_8.jpg';
+import Home from '../img/main.jpg';
 import ImageBox from '../components/ArtBox';
 import TopTitle from '../components/TopTitle';
 import About from '../components/About';
+import Input from '../components/Input';
+
 
 class LandingPage extends Component {
   constructor(props) {
@@ -31,22 +34,48 @@ class LandingPage extends Component {
   render() {
     return (
       <>
-        <div className="container">
+        <header
+          className="header"
+          style={{
+            backgroundImage: `linear-gradient(to right bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .1)), url(${Home}
+            )`,
+          }}
+        >
           <NavBar />
           <Welcome />
-          <div className="content">
+        </header>
+
+        <main className="container">
+          <section className="section-products" id="new-products">
             <TopTitle title="NEW PRODUCT" />
             <ImageBox images={this.state.images} />
-          </div>
-          <About />
-          <div className="special-offer">
+
+          </section>
+
+          <section className="section-about" id="about">
+            <About />
+          </section>
+          <section className="section-special-offers">
             <TopTitle title="SPECIAL OFFERS" />
-            <ImageBox images={this.state.images_2} />
-          </div>
-          <div className="footer">
-            <h5>&copy;2020 ARTX. ALL RIGHTS RESERVED.</h5>
-          </div>
-        </div>
+            <div className="special-art">
+              <ImageBox images={this.state.images_2} />
+            </div>
+          </section>
+        </main>
+        <footer className="footer">
+          <section className="section-contact-us">
+            <div className="contact-info">
+              <Input type="text" placeholder="First name" />
+              <Input type="text" placeholder="Last name" />
+              <Input type="text" placeholder="E-mail" />
+            </div>
+            <div className="contact-msg">
+              <textarea className="default-input" placeholder="Message" />
+              <button type="button" className="btn-primary btn-left">Send</button>
+            </div>
+          </section>
+          <h5>&copy;2020 ARTX. ALL RIGHTS RESERVED.</h5>
+        </footer>
       </>
     );
   }

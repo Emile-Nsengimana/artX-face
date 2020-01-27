@@ -4,7 +4,6 @@ import LoginImg from '../img/svg/login.svg';
 
 const Login = () => (
   <>
-    {/* <NavBar /> */}
     <div className="auth-box">
       <div className="left-side">
         <img className="login-img" src={LoginImg} alt="" />
@@ -17,7 +16,7 @@ const Login = () => (
         <form>
           <Input type="text" placeholder="Username" />
           <Input type="password" placeholder="Password" />
-          <button type="button">Login</button>
+          <button className="btn-primary" type="button">Login</button>
         </form>
       </div>
     </div>

@@ -7,11 +7,18 @@ class ArtBox extends React.Component {
       <div className="art-box">
         {this.props.images.length !== 0
           ? this.props.images.map((img) => (
-            <div key={img}>
-              <img src={img} alt="" />
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
-            </div>
-
+            <>
+              <div key={img} className="art-img">
+                <figure>
+                  <img src={img} alt="" />
+                  <figcaption className="art-details">
+                    <h3>10, 000</h3>
+                    <h3>Rwf</h3>
+                    <h3>Peter N.</h3>
+                  </figcaption>
+                </figure>
+              </div>
+            </>
           ))
           : <h3 className="not-found">Not found</h3>}
       </div>

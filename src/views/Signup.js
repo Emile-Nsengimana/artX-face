@@ -1,12 +1,9 @@
 import React from 'react';
 import Input from '../components/Input';
-import NavBar from '../components/NavBar';
 import SignupImg from '../img/svg/personal-info.svg';
-import Logo from '../img/svg/logo.svg';
 
 const Signup = () => (
   <>
-    {/* <NavBar /> */}
     <div className="auth-box">
       <div className="left-side">
         <img src={SignupImg} alt="" />
@@ -28,7 +25,8 @@ const Signup = () => (
           <Input type="text" placeholder="Street No." />
           <Input type="text" placeholder="Post code" />
           <Input type="password" placeholder="Password" />
-          <button type="button">Signup</button>
+          <Input type="password" placeholder="Confirm password" />
+          <button className="btn-primary" type="button">Signup</button>
         </form>
       </div>
     </div>
