@@ -49,7 +49,6 @@ class LandingPage extends Component {
           <section className="section-products" id="new-products">
             <TopTitle title="NEW PRODUCT" />
             <ImageBox images={this.state.images} />
-
           </section>
 
           <section className="section-about" id="about">

@@ -1,6 +1,5 @@
 import React from 'react';
-import BackgroundImg from '../img/home.jpg';
-import Down from '../img/svg/down-arrow.svg';
+import { Link } from 'react-scroll';
 
 const Welcome = () => (
   <>
@@ -11,7 +10,16 @@ const Welcome = () => (
       </h1>
     </div>
     <div className="down-arrow">
-      <a href="/"><img src={Down} alt="" /></a>
+      <Link
+        to="new-products"
+        smooth
+        offset={-100}
+        duration={2000}
+      >
+        <span />
+        <span />
+        <span />
+      </Link>
     </div>
   </>
 );

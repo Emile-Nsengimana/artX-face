@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import Logo from '../img/svg/logo.svg';
 
@@ -10,7 +9,16 @@ const NavBar = () => (
     <div className="menu">
       <a href="/">HOME</a>
       <a href="/">GALLERY</a>
-      <a href="#about">ABOUT US</a>
+      {/* <a href="#about">ABOUT US</a> */}
+      <Link
+        to="about"
+        smooth
+        offset={-85}
+        duration={2000}
+      >
+      ABOUT
+      </Link>
+
     </div>
     <div className="navbar-link">
       <a href="/login" className="btn">Login</a>
