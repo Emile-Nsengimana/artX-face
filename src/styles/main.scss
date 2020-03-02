@@ -1,4 +1,5 @@
 @import "./animations";
+@import "./popup";
 
 $color-primary: rgb(5, 47, 82);
 $color-primary-second: rgb(5, 47, 82);
@@ -46,21 +47,27 @@ a{
         position: relative;
 
         .btn-menu{
-          width: 4.5rem;
-          height: 4rem;
+          border-radius: 50px;
+          padding: .3rem;
+          width: 5rem;
+          height: 5rem;
           display: flex;
           justify-content: center;
           align-items: center;
           cursor: pointer;
           border: none;
-          position: relative;
+          box-shadow: 0 .2rem 1rem rgba(0, 1, 2, 0.61);
+          background-color: whitesmoke;
+
+          position: fixed;
           top: 4rem;
           left: 93%;
 
           & .btn-menu--burger{
-            width: 100%;
+            margin: auto;
+            width: 72%;
             height: .5rem;
-            background: rgb(99, 94, 94);
+            background: rgb(148, 142, 142);
 
             &:hover{
               background: transparent;
@@ -75,18 +82,18 @@ a{
 
             &::before, &::after{
               content: '';
-              width: 100%;
+              width: 70%;
               height: .5rem;
               position: absolute;
-              background: whitesmoke;
+              background: $color-primary;
               transition: all .5s ease-in;
             }
 
             &::before{
-              transform: translateY(-15px);
+              transform: translateY(-10px);
             }
             &::after{
-              transform: translateY(15px);
+              transform: translateY(10px);
             }
         }
       }
@@ -310,29 +317,35 @@ footer{
 
 
 .auth-box{
-  display: flex;
-  margin: auto;
-  height: fit-content;
-  margin: auto;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin: 5% auto;
+  border-radius: 3px;
 
-  & .left-side{
-    flex: 1;
-    margin-top: 10%;
+  & .box-login{
+    display: flex;
 
-    & a{
-      text-decoration: none;
-    }
+    & .left-side{
+        flex: 1;
+        margin-top: 10%;
 
-    & h1{
-      border-top-right-radius: 50px;
-      border-bottom-right-radius: 50px;
-    }
+        & a{
+          text-decoration: none;
+        }
 
-    & img{
-      width: 100%;
-      object-fit: cover;
-    }
+        & h1{
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+        }
+
+        & img{
+          width: 100%;
+          object-fit: cover;
+        }
+      }
   }
+
 
   & h1{
     text-align: center;
@@ -359,6 +372,8 @@ footer{
 .group{
   flex: 1;
   text-align: center;
+  height: fit-content;
+  overflow-x: auto;
   margin: auto;
 
   & h2{
@@ -371,16 +386,15 @@ footer{
 .default-input{
   outline: none;
   width: 75%;
-  font-size: 14pt;
+  font-size: 1.5rem;
   padding: 5px;
   border: none;
   letter-spacing: .5rem;
   border-bottom: .5px solid rgba($color-primary-prefered, 0.4);
-
   font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
   color: inherit;
-  margin: 10px;
+  margin: .7rem;
   background-color: inherit;
 }
 
@@ -435,7 +449,7 @@ footer{
         margin-top: 4rem;
       }
     }
-    
+
     &:hover .art-details{
       opacity: 1;
       transform: translate(-50%, -80%);

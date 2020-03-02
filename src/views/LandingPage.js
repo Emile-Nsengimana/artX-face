@@ -12,7 +12,8 @@ import ImageBox from '../components/ArtBox';
 import TopTitle from '../components/TopTitle';
 import About from '../components/About';
 import Input from '../components/Input';
-
+import Login from '../components/Login';
+import Signup from '../components/Signup';
 
 class LandingPage extends Component {
   constructor(props) {
@@ -75,6 +76,8 @@ class LandingPage extends Component {
           </section>
           <h5>&copy;2020 ARTX. ALL RIGHTS RESERVED.</h5>
         </footer>
+        <Login />
+        <Signup />
       </>
     );
   }

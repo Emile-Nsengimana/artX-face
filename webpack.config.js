@@ -1,3 +1,4 @@
+require ("@babel/polyfill");
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
@@ -11,7 +12,10 @@ module.exports = {
     contentBase: './build',
   },
   entry: {
-    main: ['./src/index.js'],
+    main: [
+			'@babel/polyfill',
+			'./src/index.js',
+		],
   },
   output: {
     path: path.join(__dirname, 'build'),
@@ -54,6 +58,13 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(graphql|gql)$/,
+        resolve: {
+          modules: ['node_modules'],
+        },
+        loader: require.resolve('graphql-tag/loader'),
+      }
     ],
   },
   plugins: [

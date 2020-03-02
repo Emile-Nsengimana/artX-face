@@ -1,12 +1,15 @@
 import { gql } from 'apollo-boost';
 
-const LOGIN = gql`
-query authenticate($email: String!, $password: String!) {
-    Login(email: $email, password: $password) {
-      token
+const LOGIN_QUERY = gql`
+query ($email: String!, $password: String!) {
+  authentication(email: $email, password: $password) {
+    user{
+      username
     }
+    Authorization
+  }
   }`;
 
-export default {
-  LOGIN,
+export {
+  LOGIN_QUERY,
 };

@@ -4,7 +4,10 @@ import SignupImg from '../img/svg/personal-info.svg';
 
 const Signup = () => (
   <>
+          <div className="popup" id="popup_signup">
     <div className="auth-box">
+    <div><a href="#" id="close_signup">&times;</a></div>
+    <div className="box-login">
       <div className="left-side">
         <img src={SignupImg} alt="" />
         <a href="/">
@@ -29,6 +32,8 @@ const Signup = () => (
           <button className="btn-primary" type="button">Signup</button>
         </form>
       </div>
+      </div>
+    </div>
     </div>
   </>
 );

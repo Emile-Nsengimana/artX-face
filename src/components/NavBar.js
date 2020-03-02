@@ -22,8 +22,8 @@ const NavBar = () => (
 
     {token !== true ? (
       <div className="navbar-link">
-        <a href="/login" className="btn">Login</a>
-        <a href="/signup" className="btn btn-round">Get started</a>
+        <a href="#popup_login" className="btn">Login</a>
+        <a href="#popup_signup" className="btn btn-round">Get started</a>
       </div>
     ) : (
       <div className="btn-menu">
