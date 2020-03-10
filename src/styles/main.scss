@@ -445,7 +445,9 @@ footer{
       width: 35rem;
       height: 15rem;
       overflow-x: hidden;
-      opacity: 0; & h3:first-child{
+      opacity: 0;
+      
+      & h3:first-child{
         margin-top: 4rem;
       }
     }

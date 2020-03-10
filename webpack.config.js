@@ -8,7 +8,7 @@ module.exports = {
     historyApiFallback: {
       disableDotRule: true,
     },
-    port: 8000,
+    port: 8001,
     contentBase: './build',
   },
   entry: {

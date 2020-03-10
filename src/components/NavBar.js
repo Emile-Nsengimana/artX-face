@@ -17,7 +17,6 @@ const NavBar = () => (
       >
       ABOUT
       </Link>
-
     </div>
 
     {token !== true ? (
